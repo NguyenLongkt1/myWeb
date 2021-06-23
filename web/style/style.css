@@ -1,0 +1,233 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --product-text: rgba(0,0,0,.8);
+    --red: red;
+    --background_color: #dad8d8;
+    --color_text: rgba(0,0,0,.54);
+    --price_text_color: #ee4d2d;
+    --font_size_price: 17px;
+    --selled_text_color: rgba(0,0,0,.54);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #dad8d8;
+}
+/* ---------- for navication ---------- */
+.wrap_header{
+    background: linear-gradient(-180deg,#f53d2d,#f63) ;
+    width: 100%;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+.wrap_nav{  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 34px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 15px;
+}
+.nav{
+    width: 318px;
+    height: 16px;
+    box-sizing: border-box;
+}
+.nav2{
+    width: 360px !important;
+}
+.inlineblock{
+    display: inline-block;
+}
+
+span{
+    color: var(--white); 
+}
+a{
+    color: var(--white);
+    text-decoration: none;   
+}
+.nav_items{
+    margin: 0 5px;
+    position: relative;
+}
+.nav_items:hover{
+    opacity: 0.7;
+}
+.icon i{
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+}
+.welcome{
+    display: none;
+    height: 16px;
+    width: 100px;
+}
+.elements{
+    height: 16px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+}
+.user_icon{
+    border-radius: 50%;
+    background-color: #efeded;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.user_icon i{
+    color: #999; 
+    padding-left: 3.4px;
+}
+/* ---------- for search tool ---------- */
+.wrap_searchtool_and_logo{
+    width: 90%;
+    height: 65px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20% 67% 10%;
+    grid-template-rows: 65px ;
+}
+.logo_page{
+    width: 100%;
+    height: 100%;
+    background-image: url(/Shopee_clone/img/logo.jpg);
+    background-repeat: no-repeat;
+    cusor: pointer;
+}
+.search_tool{
+    width: 96%;
+    height: 70px;
+    padding-top: 15px;
+}
+.wrap_search_form{
+    border-radius: 2px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--white);
+    position: relative;
+}
+.search{
+    box-sizing: border-box;
+    width: 92%;
+    height: 40px;
+    border: 1px solid var(--white);
+    border-radius: 2px;
+    outline: none;
+    padding-left: 10px; 
+}
+.form_contain_btn{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.btn_searching{
+    width: 62px;
+    height: 36px;
+/*    position: absolute;
+    right: 2px;
+    top: 2px;*/
+}
+.btn{
+    width: 62px;
+    height: 36px;
+    margin: auto 0;
+    position: absolute;
+    background-color: #f63;
+    right: 2px;
+    top: 2px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: #fff;
+}
+.icons{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-37%);
+    right: 2.7%;
+}
+.wrap_cart{
+    width: 100%;
+    height: 65px;
+}
+.shop_cart{
+    width: 100%;
+    height: 85px;
+    display: block;
+    text-align: center;
+    line-height: 85px;
+}
+.shop_cart i{
+    width: 32px;
+    height: 32px;
+    font-size: 26px;
+}
+.some_product{
+    width: 100%;
+}
+ul{
+    width: 75%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    list-style: none;
+    font-size: 14px;
+}
+
+/*
+ * Responsive
+ */
+@media only screen and (max-width: 450px){
+    .wrap_header{
+        height: 10%;
+    }
+    .logo_page,.nav1,.nav2,.some_product{
+        display: none;
+    }
+    .user_icon{
+        display: inline-block !important;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .wrap_search_form{
+        width: 200px;
+        position: absolute;
+        left: 10%;
+    }
+    .wrap_search_tool{
+        width: 150px;
+    }
+    .form_contain_btn{
+        width: 200px;
+    }
+    .wrap_cart{
+        width: 70px;
+        display: inline-block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .list_product{
+        grid-template-columns: 50% 50% !important;
+    }
+    
+} 

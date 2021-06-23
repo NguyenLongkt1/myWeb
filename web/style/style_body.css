@@ -1,0 +1,205 @@
+.wrap_main_content{
+    width: 90%;
+    margin: 0 auto;
+}
+.list_category1{
+    margin-top: 10px;
+    width: 100%;
+    height: 110px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.items_list_category1{
+    width: 100%;
+    height: 110px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+.items_list_category1:hover{
+    transform: scale(1.05);
+}
+.wrap{
+    width: 100px;
+    height: 81px;
+    margin: 8% auto;
+}
+.list_item{
+    color: var(--black);
+
+}
+.list_item_logo{
+    width: 45px;
+    height: 45px;
+}
+.text_items_list{
+    font-size: 14px;
+}
+
+/*---------- Banner ----------*/
+.banner{
+    width: 100%;
+    height: 110px;
+    margin-top: 15px;
+}
+.banner_img{
+    width: 100%;
+    height: 110px;
+}
+
+/*---------- cateogy for product after banner ----------*/
+.category_of_product{
+    margin-top: 15px;
+    background-color: var(--white);
+    width: 100%;
+    height: 210px;    
+}
+.category_of_product_name{
+    height: 60px;
+    line-height: 60px;
+    border-left: 1px solid var(--background_color) ;
+    border-right: 1px solid var(--background_color) ;
+}
+.category_of_product_name h2{
+    color: var(--color_text);
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 15px;
+}
+.category_of_product_list{
+    height: 150px;
+    display: grid;   
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+.category_of_product_item{
+    border: 1px solid var(--background_color);
+}
+.category_of_product_item:hover{
+    border: 1px solid #c0bfbf;
+}
+.category_of_product_item_image{
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+.products_icon{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.category_of_product_item_name{
+    text-align: center;
+}
+.category_of_product_item_name span{
+    color: var(--black);
+}
+
+/*---------- list product ----------*/
+.clother_for_men,.Smartphone,.elec_devices,.watch_devices,.camera_devices,.footwears,.car_bicycle,.clother_for_women,.Bookstore_online{
+    background-color: var(--white);
+    width: 100%;
+    margin-top: 15px;
+}
+.wrappr_name{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 4px;   
+}
+.name_box{
+    width: 200px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 4px solid var(--price_text_color);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.pr_name .title_categ{
+    color: var(--price_text_color) !important;
+}
+
+.list_product{
+    width: 100%;
+    display: grid;
+    box-sizing: border-box;
+    background-color: var(--background_color);
+    grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+}
+.product{
+    width: 98%;
+    height: 290px;
+    margin: 0 auto;
+    margin-top: 3px;
+    /* border: 3px solid var(--background_color); */
+}
+.product:hover{
+    border: 1px solid var(--red);
+}
+.pr_img{
+    height: 190px;
+}
+.pr_pic{
+    width: 100%;
+    height: 100%;
+}
+.pr_name_text{
+    height: 45px; 
+    background-color: var(--white);
+    padding-left: 5px;
+    padding-top: 8px; 
+}
+.text_name{
+    width: 100%;
+    height: 45px;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 120px;
+}
+.text_name a{
+    width: 100%;
+    height: 100%;
+    color: var(--product-text);
+}
+.pr_price{
+    background-color: var(--white);
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    color: var(--price_text_color);
+    font-size: 22px;
+    width: 65%;
+    padding: 11px 0;
+}
+.selled{
+    color: var(--selled_text_color);
+    width: 35%;
+}
+
+/*
+ * Responsive
+ */
+@media only screen and (max-width: 740px){
+    .list_category1{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .category_of_product_list{
+        grid-template-columns: 25% 25% 25% 25%;
+        overflow: hidden;
+    }
+  
+}

@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 29, 2021, 1:40:28 PM
+    Author     : ASUS
+*/
+.wrap_outside_nav{
+    width: 100%;
+    height: 34px;
+    background-color: #ee4d2d !important;
+}
+.wrap_nav{  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 34px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 15px;
+    background-color: #ee4d2d;
+    color: #fff;
+}
+.nav{
+    width: 318px;
+    height: 16px;
+    box-sizing: border-box;
+}
+.nav2{
+    width: 360px !important;
+}
+.inlineblock{
+    display: inline-block;
+}
+
+.inlineblock span{
+    color: var(--white);
+    font-size: 15px;
+}
+a{
+    color: var(--white);
+    text-decoration: none;   
+}
+.nav_items{
+    margin: 0 5px;
+    position: relative;
+}
+.nav_items:hover{
+    opacity: 0.7;
+}
+.icon i{
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+}
+.welcome{
+    display: none;
+    height: 16px;
+    width: 100px;
+}
+.elements{
+    height: 16px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+}
+.user_icon{
+    border-radius: 50%;
+    background-color: #efeded;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+}
+.user_icon i{
+    color: #999; 
+    padding-left: 3.4px;
+}

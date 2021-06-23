@@ -1,0 +1,91 @@
+.wrap_main_content{
+    margin-top: 20px;
+}
+.wrap_around_inside_area{
+    width: 90%;
+    margin: 0 auto;
+}
+.input_about_product{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.content{
+    width: 90%;
+    margin: 0 auto;
+    height: 80px;
+    margin-bottom: 15px;
+}
+.content h2{
+    height: 80px;
+    line-height: 80px;
+}
+#first{
+    height: 60px;
+    line-height: 60px;
+}
+.content span{
+    color: rgb(153, 153, 153);
+    height: 20px;
+    line-height: 20px;
+}
+hr{
+    width: 90%;
+    margin: 0 auto;
+}
+.form{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.pr{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.descr{
+    height: 160px !important;
+}
+label{
+    font-size: 18px;
+}
+.wrap_ip_area{
+    width: 80%;
+}
+.wrap_ip_area input{
+    width: 98%;
+    height: 40px;
+    outline: none;
+    padding-left: 2%;
+    outline: none;
+}
+.descr textarea{
+    height: 157px;
+    padding-top: 3px;
+    width: 98%;
+    padding-left: 2%;
+    outline: none;
+}
+.pr select{
+    width: 50%;
+    height: 40px;
+}
+.sellProduct{
+    margin-top: 40px;
+    margin-left: 55px;
+    width: 140px;
+    height: 40px;
+}
+.sellProduct input{
+    background-color: var(--price_text_color);
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
